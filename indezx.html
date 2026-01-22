@@ -1,69 +1,94 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <title>darkfenerr-site</title>
+  <meta charset="UTF-8">
+  <title>darkfenerr-site</title>
 
-    <!-- Font Awesome (ikonlar için) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: #0f0f0f;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #0f0f0f;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
 
-        .box {
-            text-align: center;
-        }
+    h1 {
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            margin-bottom: 25px;
-        }
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
 
-        .btn {
-            display: block;
-            width: 260px;
-            margin: 12px auto;
-            padding: 14px;
-            text-decoration: none;
-            color: white;
-            font-size: 18px;
-            border-radius: 8px;
-        }
+    .btn {
+      padding: 12px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-        .instagram {
-            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
-        }
+    .instagram {
+      background: #e1306c;
+    }
 
-        .telegram {
-            background: #229ED9;
-        }
-    </style>
+    .telegram {
+      background: #229ED9;
+    }
+
+    .counter {
+      margin-top: 10px;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="box">
-    <h1>darkfenerr</h1>
+  <h1>darkfenerr-site</h1>
 
-    <a class="btn instagram"
-       href="https://www.instagram.com/darkfenerr.ae7/"
-       target="_blank">
-        <i class="fa-brands fa-instagram"></i> Instagram
+  <div class="buttons">
+    <a
+      class="btn instagram"
+      href="https://www.instagram.com/darkfenerr.ae7/"
+      target="_blank"
+    >
+      <i class="fa-brands fa-instagram"></i>
+      Instagram
     </a>
 
-    <a class="btn telegram"
-       href="https://t.me/Darkfenerrr"
-       target="_blank">
-        <i class="fa-brands fa-telegram"></i> Telegram
+    <a
+      class="btn telegram"
+      href="https://t.me/Darkfenerrr"
+      target="_blank"
+    >
+      <i class="fa-brands fa-telegram"></i>
+      Telegram
     </a>
-</div>
+  </div>
+
+  <div class="counter">
+    <img
+      src="https://visitorbadge.io/api/visitors?path=darkfenerr-site&label=Ziyaretçi&countColor=%23ff0000"
+      alt="visitor counter"
+    />
+  </div>
 
 </body>
 </html>
