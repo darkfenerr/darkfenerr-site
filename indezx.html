@@ -1,101 +1,69 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Darkfenerr</title>
+    <meta charset="UTF-8">
+    <title>darkfenerr-site</title>
 
-  <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  >
+    <!-- Font Awesome (ikonlar için) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <style>
-    body {
-      background: #0f0f0f;
-      color: white;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding-top: 80px;
-    }
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #0f0f0f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
 
-    h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+        .box {
+            text-align: center;
+        }
 
-    p {
-      max-width: 600px;
-      margin: auto;
-      color: #ccc;
-      line-height: 1.7;
-    }
+        h1 {
+            margin-bottom: 25px;
+        }
 
-    .buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+        .btn {
+            display: block;
+            width: 260px;
+            margin: 12px auto;
+            padding: 14px;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+        }
 
-    .btn {
-      text-decoration: none;
-      color: white;
-      padding: 14px 26px;
-      border-radius: 8px;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+        .instagram {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+        }
 
-    .instagram {
-      background: #E1306C;
-    }
-
-    .telegram {
-      background: #0088cc;
-    }
-
-    .btn:hover {
-      opacity: 0.8;
-    }
-  </style>
+        .telegram {
+            background: #229ED9;
+        }
+    </style>
 </head>
-
 <body>
 
-  <h1>Darkfenerr</h1>
+<div class="box">
+    <h1>darkfenerr</h1>
 
-  <p>
-    Merhaba ben Darkfenerr.  
-    Instagram’da editler paylaşıyorum.  
-    Telegram’da premium içerikler var.
-  </p>
-
-  <div class="buttons">
-    <!-- INSTAGRAM -->
-    <a
-      class="btn instagram"
-      href="https://www.instagram.com/darkfenerr.ae7/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa-brands fa-instagram"></i>
-      Instagram
+    <a class="btn instagram"
+       href="https://www.instagram.com/darkfenerr.ae7/"
+       target="_blank">
+        <i class="fa-brands fa-instagram"></i> Instagram
     </a>
 
-    <!-- TELEGRAM -->
-    <a
-      class="btn telegram"
-      href="https://t.me/Darkfenerrr"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <i class="fa-brands fa-telegram"></i>
-      Telegram
+    <a class="btn telegram"
+       href="https://t.me/Darkfenerrr"
+       target="_blank">
+        <i class="fa-brands fa-telegram"></i> Telegram
     </a>
-  </div>
+</div>
 
 </body>
 </html>
