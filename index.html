@@ -4,6 +4,12 @@
   <meta charset="UTF-8">
   <title>Darkfenerr</title>
 
+  <!-- ICONS (Instagram / Telegram) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  >
+
   <style>
     body {
       background-color: #0f0f0f;
@@ -14,7 +20,7 @@
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
 
@@ -22,19 +28,24 @@
       max-width: 600px;
       margin: auto;
       margin-bottom: 40px;
-      line-height: 1.6;
+      line-height: 1.7;
+      font-size: 16px;
+      color: #ccc;
     }
 
     .btn {
-      display: block;
-      width: 260px;
-      margin: 15px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 270px;
+      margin: 16px auto;
       padding: 15px;
       font-size: 18px;
       font-weight: bold;
       text-decoration: none;
       color: white;
-      border-radius: 10px;
+      border-radius: 12px;
       transition: 0.3s;
     }
 
@@ -44,14 +55,27 @@
 
     .telegram:hover {
       background: #1c85b8;
+      transform: scale(1.05);
     }
 
     .instagram {
-      background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+      background: linear-gradient(
+        45deg,
+        #f09433,
+        #e6683c,
+        #dc2743,
+        #cc2366,
+        #bc1888
+      );
     }
 
     .instagram:hover {
-      opacity: 0.85;
+      opacity: 0.9;
+      transform: scale(1.05);
+    }
+
+    .btn i {
+      font-size: 22px;
     }
   </style>
 </head>
@@ -61,17 +85,27 @@
   <h1>Darkfenerr 😎</h1>
 
   <p>
-    Merhaba, ben Darkfenerr.  
-    Instagram’da editler paylaşıyorum.  
+    Merhaba, ben Darkfenerr.<br>
+    Instagram’da editler paylaşıyorum.<br>
     Telegram Premium kanalımda kendi yaptığımız compları paylaşıyoruz.
   </p>
 
-  <a class="btn telegram" href="https://t.me/wdpremiumteaser" target="_blank">
-    🚀 Telegram Kanalım
+  <a
+    class="btn telegram"
+    href="https://t.me/wdpremiumteaser"
+    target="_blank"
+  >
+    <i class="fab fa-telegram-plane"></i>
+    Telegram Kanalım
   </a>
 
-  <a class="btn instagram" href="https://www.instagram.com/darkfenerr.ae7/" target="_blank">
-    📸 Instagram Edit Sayfam
+  <a
+    class="btn instagram"
+    href="https://www.instagram.com/darkfenerr.ae7/"
+    target="_blank"
+  >
+    <i class="fab fa-instagram"></i>
+    Instagram Edit Sayfam
   </a>
 
 </body>
