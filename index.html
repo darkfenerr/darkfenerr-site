@@ -2,47 +2,59 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>darkfenerr-site</title>
+  <title>Darkfenerr</title>
 
-  <!-- FontAwesome -->
+  <!-- Font Awesome ICONS -->
   <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 
   <style>
     body {
       margin: 0;
-      padding: 0;
+      min-height: 100vh;
       background: #0f0f0f;
       color: white;
       font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
 
     h1 {
-      margin-bottom: 20px;
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      margin-bottom: 30px;
     }
 
     .buttons {
       display: flex;
-      gap: 15px;
-      margin-bottom: 20px;
+      gap: 20px;
+      margin-bottom: 30px;
     }
 
     .btn {
-      padding: 12px 20px;
-      border-radius: 8px;
       text-decoration: none;
       color: white;
+      padding: 14px 22px;
+      border-radius: 8px;
       font-size: 18px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 10px;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+      transform: scale(1.05);
     }
 
     .instagram {
@@ -54,16 +66,24 @@
     }
 
     .counter {
-      margin-top: 10px;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>darkfenerr-site</h1>
+  <h1>Darkfenerr</h1>
+  <p>Sosyal medya bağlantılarım</p>
 
   <div class="buttons">
+    <!-- Instagram -->
     <a
       class="btn instagram"
       href="https://www.instagram.com/darkfenerr.ae7/"
@@ -73,6 +93,7 @@
       Instagram
     </a>
 
+    <!-- Telegram -->
     <a
       class="btn telegram"
       href="https://t.me/Darkfenerrr"
@@ -83,12 +104,17 @@
     </a>
   </div>
 
+  <!-- Ziyaretçi Sayacı -->
   <div class="counter">
     <img
-      src="https://visitorbadge.io/api/visitors?path=darkfenerr-site&label=Ziyaretçi&countColor=%23ff0000"
+      src="https://visitorbadge.io/api/visitors?path=darkfenerr-site&label=Ziyaretçi&countColor=%23ffffff"
       alt="visitor counter"
     />
   </div>
+
+  <footer>
+    © 2026 Darkfenerr
+  </footer>
 
 </body>
 </html>
