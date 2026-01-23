@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Darkfenerr</title>
+  <title>Darkfenerr | Fenerbahçe</title>
 
   <!-- Font Awesome -->
   <link
@@ -12,33 +12,35 @@
 
   <style>
     body {
-      background-color: #0f0f0f;
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #0b1c2d, #001f3f);
       color: white;
       font-family: Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      margin: 0;
       text-align: center;
       overflow: hidden;
     }
 
     .container {
-      max-width: 500px;
-      padding: 20px;
+      max-width: 520px;
+      padding: 25px;
       animation: fadeUp 1.5s ease forwards;
     }
 
     h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 15px;
+      color: #f5c400;
+      text-shadow: 0 0 15px rgba(245,196,0,0.8);
       animation: glow 2s ease-in-out infinite alternate;
     }
 
     .desc {
       font-size: 16px;
-      color: #ccc;
+      color: #e0e0e0;
       margin-bottom: 35px;
       line-height: 1.7;
       opacity: 0;
@@ -61,12 +63,14 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      padding: 14px 24px;
-      border-radius: 30px;
+      padding: 14px 26px;
+      border-radius: 40px;
       text-decoration: none;
       color: white;
       font-size: 16px;
+      font-weight: bold;
       transition: 0.3s;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
     }
 
     .btn i {
@@ -78,12 +82,12 @@
     }
 
     .telegram {
-      background-color: #0088cc;
+      background: linear-gradient(45deg, #0088cc, #005f99);
     }
 
     .btn:hover {
       transform: scale(1.1);
-      opacity: 0.9;
+      box-shadow: 0 0 25px rgba(245,196,0,0.7);
     }
 
     .counter {
@@ -94,19 +98,19 @@
     }
 
     footer {
-      margin-top: 20px;
+      margin-top: 25px;
       font-size: 13px;
-      color: #666;
+      color: #bbb;
       opacity: 0;
       animation: fadeUp 1.5s ease forwards;
       animation-delay: 2.2s;
     }
 
-    /* ANİMASYONLAR */
+    /* Animasyonlar */
     @keyframes fadeUp {
       from {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(35px);
       }
       to {
         opacity: 1;
@@ -116,10 +120,10 @@
 
     @keyframes glow {
       from {
-        text-shadow: 0 0 5px #fff;
+        text-shadow: 0 0 10px #f5c400;
       }
       to {
-        text-shadow: 0 0 20px #f5c400;
+        text-shadow: 0 0 25px #f5c400;
       }
     }
   </style>
@@ -157,13 +161,13 @@
 
     <div class="counter">
       <img
-        src="https://visitorbadge.io/api/visitors?path=darkfenerr-site&label=Ziyaretçi&countColor=%23ff0000"
+        src="https://visitorbadge.io/api/visitors?path=darkfenerr-site&label=Ziyaretçi&countColor=%23f5c400"
         alt="visitor counter"
       />
     </div>
 
     <footer>
-      © 2026 Darkfenerr
+      💛💙 Fenerbahçe • © 2026 Darkfenerr
     </footer>
   </div>
 
