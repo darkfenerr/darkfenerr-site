@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Darkfenerr | Fenerbahçe</title>
+  <title>Darkfenerr | Cinematic</title>
 
   <!-- Font Awesome -->
   <link
@@ -22,28 +22,40 @@
       text-align: center;
       overflow: hidden;
 
-      /* ANİMASYONLU ARKA PLAN */
-      background: linear-gradient(
-        -45deg,
-        #001f3f,
-        #0b1c2d,
+      /* Cinematic arka plan */
+      background: radial-gradient(
+        circle at top,
         #002b5c,
-        #f5c400
+        #001427,
+        #000814
       );
-      background-size: 400% 400%;
-      animation: gradientBG 15s ease infinite;
+      animation: bgMove 20s ease infinite;
     }
 
-    @keyframes gradientBG {
+    @keyframes bgMove {
       0% { background-position: 0% 50%; }
       50% { background-position: 100% 50%; }
       100% { background-position: 0% 50%; }
     }
 
+    /* Fenerbahçe logo watermark */
+    .logo-bg {
+      position: absolute;
+      inset: 0;
+      background: url("https://upload.wikimedia.org/wikipedia/tr/8/86/Fenerbah%C3%A7e_SK.png")
+        center no-repeat;
+      background-size: 45%;
+      opacity: 0.05;
+      filter: blur(1px);
+      z-index: 0;
+    }
+
     .container {
+      position: relative;
+      z-index: 1;
       max-width: 520px;
-      padding: 25px;
-      backdrop-filter: blur(6px);
+      padding: 30px;
+      backdrop-filter: blur(8px);
       animation: fadeUp 1.5s ease forwards;
     }
 
@@ -51,7 +63,7 @@
       font-size: 44px;
       margin-bottom: 15px;
       color: #f5c400;
-      text-shadow: 0 0 20px rgba(245,196,0,0.9);
+      text-shadow: 0 0 25px rgba(245,196,0,0.9);
       animation: glow 2s ease-in-out infinite alternate;
     }
 
@@ -86,8 +98,9 @@
       color: white;
       font-size: 16px;
       font-weight: bold;
+      letter-spacing: 0.5px;
       transition: 0.3s;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
     }
 
     .btn i {
@@ -99,12 +112,12 @@
     }
 
     .telegram {
-      background: linear-gradient(45deg, #0088cc, #005f99);
+      background: linear-gradient(45deg, #0088cc, #004d73);
     }
 
     .btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 25px rgba(245,196,0,0.8);
+      transform: scale(1.12);
+      box-shadow: 0 0 30px rgba(245,196,0,0.9);
     }
 
     .counter {
@@ -117,7 +130,7 @@
     footer {
       margin-top: 25px;
       font-size: 13px;
-      color: #ddd;
+      color: #bbb;
       opacity: 0;
       animation: fadeUp 1.5s ease forwards;
       animation-delay: 2.2s;
@@ -126,7 +139,7 @@
     @keyframes fadeUp {
       from {
         opacity: 0;
-        transform: translateY(35px);
+        transform: translateY(40px);
       }
       to {
         opacity: 1;
@@ -139,12 +152,15 @@
         text-shadow: 0 0 10px #f5c400;
       }
       to {
-        text-shadow: 0 0 30px #f5c400;
+        text-shadow: 0 0 35px #f5c400;
       }
     }
   </style>
 </head>
 <body>
+
+  <!-- Logo Watermark -->
+  <div class="logo-bg"></div>
 
   <div class="container">
     <h1>Darkfenerr</h1>
@@ -183,7 +199,7 @@
     </div>
 
     <footer>
-      💛💙 Fenerbahçe • © 2026 Darkfenerr
+      💛💙 Fenerbahçe • Cinematic Edit Vibes
     </footer>
   </div>
 
